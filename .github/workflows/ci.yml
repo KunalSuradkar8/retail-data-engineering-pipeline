@@ -25,5 +25,13 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Automated Pytest Unit Tests
+      env:
+        PYTHONPATH: .
+        DB_HOST: localhost
+        DB_PORT: 5432
+        DB_NAME: retail_db
+        DB_USER: postgres
+        DB_PASSWORD: postgrespassword
+        DB_SCHEMA: retail
       run: |
         python -m pytest -v
