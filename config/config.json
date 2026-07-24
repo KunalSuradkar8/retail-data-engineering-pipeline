@@ -1,0 +1,34 @@
+{
+    "pipeline_name": "Retail_Data_Engineering_Project",
+    "data_paths": {
+        "raw_dir": "data/raw",
+        "processed_dir": "data/processed",
+        "archive_dir": "data/archive",
+        "bad_records_dir": "data/bad_records"
+    },
+    "log_config": {
+        "log_dir": "logs",
+        "log_file": "pipeline.log",
+        "log_level": "INFO"
+    },
+    "database": {
+        "target_schema": "retail",
+        "target_table": "orders"
+    },
+    "validation_rules": {
+        "required_columns": [
+            "order_id",
+            "customer_id",
+            "product_id",
+            "quantity",
+            "price"
+        ],
+        "column_types": {
+            "order_id": "int64",
+            "customer_id": "int64",
+            "product_id": "int64",
+            "quantity": "int64",
+            "price": "float64"
+        }
+    }
+}

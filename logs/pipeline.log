@@ -1,0 +1,109 @@
+2026-07-24 08:04:47 - INFO - [main.py:46] - ==================================================
+2026-07-24 08:04:47 - INFO - [main.py:47] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 08:04:47 - INFO - [main.py:48] - ==================================================
+2026-07-24 08:04:47 - INFO - [main.py:56] - --- Step 1: Data Extraction ---
+2026-07-24 08:04:47 - INFO - [extract.py:46] - एक्स्टॅक्शनसाठी फाईल निवडली: k:\anti retail project1\data/raw\sample_orders.csv
+2026-07-24 08:04:47 - INFO - [extract.py:58] - k:\anti retail project1\data/raw\sample_orders.csv मधून डेटा एक्स्टॅक्ट करत आहे...
+2026-07-24 08:04:47 - WARNING - [extract.py:63] - फाईल k:\anti retail project1\data/raw\sample_orders.csv रिकामी (Empty) आहे.
+2026-07-24 08:04:47 - INFO - [main.py:65] - --- Step 2: Data Validation ---
+2026-07-24 08:04:47 - WARNING - [validation.py:46] - व्हॅलिडेशन अपयशी: मिळालेला DataFrame रिकामा आहे.
+2026-07-24 08:04:47 - WARNING - [main.py:70] - व्हॅलिडेशननंतर एकही योग्य रेकॉर्ड उरला नाही. ट्रान्सफॉर्मेशन आणि लोड टप्पा वगळत आहे.
+2026-07-24 08:04:47 - INFO - [main.py:31] - राॅ फाईल 'k:\anti retail project1\data/raw\sample_orders.csv' यशस्वीरीत्या 'k:\anti retail project1\data/archive\20260724_080447_sample_orders.csv' मध्ये आर्काईव्ह केली.
+2026-07-24 08:04:47 - INFO - [main.py:72] - पायपलाईन 0 रेकॉर्ड्ससह पूर्ण झाली.
+2026-07-24 08:06:20 - INFO - [main.py:45] - ==================================================
+2026-07-24 08:06:20 - INFO - [main.py:46] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 08:06:20 - INFO - [main.py:47] - ==================================================
+2026-07-24 08:06:20 - INFO - [main.py:55] - --- Step 1: Data Extraction ---
+2026-07-24 08:06:20 - INFO - [extract.py:45] - Selected file for extraction: k:\anti retail project1\data/raw\sample_orders.csv
+2026-07-24 08:06:20 - INFO - [extract.py:57] - Extracting data from k:\anti retail project1\data/raw\sample_orders.csv...
+2026-07-24 08:06:20 - INFO - [extract.py:59] - Successfully extracted 7 rows from k:\anti retail project1\data/raw\sample_orders.csv.
+2026-07-24 08:06:20 - INFO - [main.py:64] - --- Step 2: Data Validation ---
+2026-07-24 08:06:20 - INFO - [validation.py:45] - Starting validation on 7 records...
+2026-07-24 08:06:20 - INFO - [validation.py:84] - Validation summary: Total=7, Good=2, Bad=5
+2026-07-24 08:06:20 - WARNING - [validation.py:103] - Persisted 5 bad records to k:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-24 08:06:20 - INFO - [main.py:75] - --- Step 3: Data Transformation ---
+2026-07-24 08:06:20 - INFO - [transform.py:35] - Starting data transformation on 2 records...
+2026-07-24 08:06:20 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-24 08:06:20 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-24 08:06:20 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-24 08:06:20 - INFO - [transform.py:65] - Transformation complete. Prepared 2 rows for load step.
+2026-07-24 08:06:20 - INFO - [main.py:80] - --- Step 4: Database Loading ---
+2026-07-24 08:06:20 - INFO - [load.py:38] - Preparing to load 2 records into retail.orders...
+2026-07-24 08:06:20 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-24 08:06:20 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-24 08:06:20 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-24 08:06:20 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-24 08:06:20 - INFO - [database.py:98] - Executing bulk insertion for 2 records...
+2026-07-24 08:06:20 - INFO - [database.py:101] - Bulk insertion of 2 records completed successfully.
+2026-07-24 08:06:20 - INFO - [load.py:61] - Successfully loaded 2 records into database table 'retail.orders'.
+2026-07-24 08:06:20 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-24 08:06:20 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-24 08:06:20 - INFO - [main.py:85] - --- Step 5: Archiving Processed Data ---
+2026-07-24 08:06:20 - INFO - [main.py:30] - Successfully archived raw file 'k:\anti retail project1\data/raw\sample_orders.csv' to 'k:\anti retail project1\data/archive\20260724_080620_sample_orders.csv'.
+2026-07-24 08:06:20 - INFO - [main.py:88] - ==================================================
+2026-07-24 08:06:20 - INFO - [main.py:89] - ETL Pipeline Job Completed Successfully! Total Rows Loaded: 2
+2026-07-24 08:06:20 - INFO - [main.py:90] - ==================================================
+2026-07-24 08:07:14 - INFO - [main.py:45] - ==================================================
+2026-07-24 08:07:14 - INFO - [main.py:46] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 08:07:14 - INFO - [main.py:47] - ==================================================
+2026-07-24 08:07:14 - INFO - [main.py:55] - --- Step 1: Data Extraction ---
+2026-07-24 08:07:14 - INFO - [extract.py:40] - No CSV files found in raw directory: k:\anti retail project1\data/raw
+2026-07-24 08:07:14 - INFO - [main.py:60] - Pipeline Execution Ended: No files present in raw directory to process.
+2026-07-24 08:08:12 - INFO - [main.py:45] - ==================================================
+2026-07-24 08:08:12 - INFO - [main.py:46] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 08:08:12 - INFO - [main.py:47] - ==================================================
+2026-07-24 08:08:12 - INFO - [main.py:55] - --- Step 1: Data Extraction ---
+2026-07-24 08:08:12 - INFO - [extract.py:45] - Selected file for extraction: k:\anti retail project1\data/raw\sample_orders.csv
+2026-07-24 08:08:12 - INFO - [extract.py:57] - Extracting data from k:\anti retail project1\data/raw\sample_orders.csv...
+2026-07-24 08:08:12 - WARNING - [extract.py:62] - File k:\anti retail project1\data/raw\sample_orders.csv is empty.
+2026-07-24 08:08:12 - INFO - [main.py:64] - --- Step 2: Data Validation ---
+2026-07-24 08:08:12 - WARNING - [validation.py:42] - Validation Failed: The input DataFrame is empty or None.
+2026-07-24 08:08:12 - WARNING - [main.py:69] - No valid records remaining after validation phase. Skipping transformation and load.
+2026-07-24 08:08:12 - INFO - [main.py:30] - Successfully archived raw file 'k:\anti retail project1\data/raw\sample_orders.csv' to 'k:\anti retail project1\data/archive\20260724_080812_sample_orders.csv'.
+2026-07-24 08:08:12 - INFO - [main.py:71] - Pipeline completed with 0 records loaded.
+2026-07-24 08:10:16 - INFO - [main.py:45] - ==================================================
+2026-07-24 08:10:16 - INFO - [main.py:46] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 08:10:16 - INFO - [main.py:47] - ==================================================
+2026-07-24 08:10:16 - INFO - [main.py:55] - --- Step 1: Data Extraction ---
+2026-07-24 08:10:16 - INFO - [extract.py:45] - Selected file for extraction: k:\anti retail project1\data/raw\sample_orders.csv
+2026-07-24 08:10:16 - INFO - [extract.py:57] - Extracting data from k:\anti retail project1\data/raw\sample_orders.csv...
+2026-07-24 08:10:16 - INFO - [extract.py:59] - Successfully extracted 7 rows from k:\anti retail project1\data/raw\sample_orders.csv.
+2026-07-24 08:10:16 - INFO - [main.py:64] - --- Step 2: Data Validation ---
+2026-07-24 08:10:16 - INFO - [validation.py:45] - Starting validation on 7 records...
+2026-07-24 08:10:16 - INFO - [validation.py:84] - Validation summary: Total=7, Good=2, Bad=5
+2026-07-24 08:10:16 - WARNING - [validation.py:103] - Persisted 5 bad records to k:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-24 08:10:16 - INFO - [main.py:75] - --- Step 3: Data Transformation ---
+2026-07-24 08:10:16 - INFO - [transform.py:35] - Starting data transformation on 2 records...
+2026-07-24 08:10:16 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-24 08:10:16 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-24 08:10:16 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-24 08:10:16 - INFO - [transform.py:65] - Transformation complete. Prepared 2 rows for load step.
+2026-07-24 08:10:16 - INFO - [main.py:80] - --- Step 4: Database Loading ---
+2026-07-24 08:10:16 - INFO - [load.py:38] - Preparing to load 2 records into retail.orders...
+2026-07-24 08:10:16 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-24 08:10:17 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-24 08:10:17 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-24 08:10:17 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-24 08:10:17 - INFO - [database.py:98] - Executing bulk insertion for 2 records...
+2026-07-24 08:10:17 - INFO - [database.py:101] - Bulk insertion of 2 records completed successfully.
+2026-07-24 08:10:17 - INFO - [load.py:61] - Successfully loaded 2 records into database table 'retail.orders'.
+2026-07-24 08:10:17 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-24 08:10:17 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-24 08:10:17 - INFO - [main.py:85] - --- Step 5: Archiving Processed Data ---
+2026-07-24 08:10:17 - INFO - [main.py:30] - Successfully archived raw file 'k:\anti retail project1\data/raw\sample_orders.csv' to 'k:\anti retail project1\data/archive\20260724_081017_sample_orders.csv'.
+2026-07-24 08:10:17 - INFO - [main.py:88] - ==================================================
+2026-07-24 08:10:17 - INFO - [main.py:89] - ETL Pipeline Job Completed Successfully! Total Rows Loaded: 2
+2026-07-24 08:10:17 - INFO - [main.py:90] - ==================================================
+2026-07-24 08:40:47 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-24 08:40:47 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-24 08:40:47 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-24 08:40:47 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-24 08:40:47 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-24 08:40:47 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-24 08:40:47 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-24 08:40:47 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-24 08:40:47 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-0\test_extractor_empty_directory0
+2026-07-24 10:09:00 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-24 10:09:00 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-24 10:09:00 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-24 10:09:00 - INFO - [database.py:54] - Database connection and cursor closed safely.

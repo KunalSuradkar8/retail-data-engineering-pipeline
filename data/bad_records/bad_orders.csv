@@ -1,0 +1,13 @@
+order_id,customer_id,product_id,quantity,price,rejection_reason
+101,1,501,2.0,99.99,Duplicate order_id found
+104,4,504,-1.0,20.0,Invalid/Negative quantity
+105,5,505,3.0,-10.0,Invalid/Negative price
+101,1,501,2.0,99.99,Duplicate order_id found
+106,6,506,,30.0,Null values found; Invalid/Negative quantity
+101,1,501,2.0,99.99,Duplicate order_id found
+104,4,504,-1.0,20.0,Invalid/Negative quantity
+105,5,505,3.0,-10.0,Invalid/Negative price
+101,1,501,2.0,99.99,Duplicate order_id found
+106,6,506,,30.0,Null values found; Invalid/Negative quantity
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
