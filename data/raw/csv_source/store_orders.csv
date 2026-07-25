@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,quantity,price
+1001,201,501,2,150.0
+1002,202,502,1,899.99
+1003,203,503,4,45.5

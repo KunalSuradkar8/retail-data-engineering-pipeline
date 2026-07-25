@@ -1,0 +1,25 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Environment Variables & Password
+.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Logs & Temporary Data Files
+logs/*.log
+data/raw/*.csv
+!data/raw/.gitkeep
+data/bad_records/*.csv
+!data/bad_records/.gitkeep
+data/archive/*.csv
+!data/archive/.gitkeep
+
+# IDE Configs
+.vscode/
+.idea/

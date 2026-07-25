@@ -1,0 +1,20 @@
+[
+  {
+    "transaction_id": "TXN_9001",
+    "order_id": 1001,
+    "payment_mode": "UPI",
+    "status": "SUCCESS"
+  },
+  {
+    "transaction_id": "TXN_9002",
+    "order_id": 1002,
+    "payment_mode": "CREDIT_CARD",
+    "status": "SUCCESS"
+  },
+  {
+    "transaction_id": "TXN_9003",
+    "order_id": 1003,
+    "payment_mode": "NET_BANKING",
+    "status": "PENDING"
+  }
+]

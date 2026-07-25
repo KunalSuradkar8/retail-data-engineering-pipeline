@@ -107,3 +107,447 @@
 2026-07-24 10:09:00 - INFO - [database.py:29] - PostgreSQL connection established successfully.
 2026-07-24 10:09:00 - INFO - [database.py:47] - Transaction committed successfully.
 2026-07-24 10:09:00 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-24 18:37:53 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-24 18:37:53 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-24 18:37:53 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-24 18:37:53 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-24 18:37:53 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-24 18:37:53 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-24 18:37:53 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-24 18:37:53 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-24 18:37:53 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-1\test_extractor_empty_directory0
+2026-07-24 18:50:33 - INFO - [main.py:45] - ==================================================
+2026-07-24 18:50:33 - INFO - [main.py:46] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 18:50:33 - INFO - [main.py:47] - ==================================================
+2026-07-24 18:50:33 - INFO - [main.py:55] - --- Step 1: Data Extraction ---
+2026-07-24 18:50:33 - INFO - [extract.py:45] - Selected file for extraction: k:\anti retail project1\data/raw\orders_raw_20260724_184839.csv
+2026-07-24 18:50:33 - INFO - [extract.py:57] - Extracting data from k:\anti retail project1\data/raw\orders_raw_20260724_184839.csv...
+2026-07-24 18:50:33 - INFO - [extract.py:59] - Successfully extracted 1000 rows from k:\anti retail project1\data/raw\orders_raw_20260724_184839.csv.
+2026-07-24 18:50:33 - INFO - [main.py:64] - --- Step 2: Data Validation ---
+2026-07-24 18:50:33 - INFO - [validation.py:45] - Starting validation on 1000 records...
+2026-07-24 18:50:33 - INFO - [validation.py:84] - Validation summary: Total=1000, Good=949, Bad=51
+2026-07-24 18:50:33 - WARNING - [validation.py:103] - Persisted 51 bad records to k:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-24 18:50:33 - INFO - [main.py:75] - --- Step 3: Data Transformation ---
+2026-07-24 18:50:33 - INFO - [transform.py:35] - Starting data transformation on 949 records...
+2026-07-24 18:50:33 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-24 18:50:33 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-24 18:50:33 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-24 18:50:33 - INFO - [transform.py:65] - Transformation complete. Prepared 949 rows for load step.
+2026-07-24 18:50:33 - INFO - [main.py:80] - --- Step 4: Database Loading ---
+2026-07-24 18:50:33 - INFO - [load.py:38] - Preparing to load 949 records into retail.orders...
+2026-07-24 18:50:33 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-24 18:50:33 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-24 18:50:33 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-24 18:50:33 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-24 18:50:33 - INFO - [database.py:98] - Executing bulk insertion for 949 records...
+2026-07-24 18:50:33 - INFO - [database.py:101] - Bulk insertion of 949 records completed successfully.
+2026-07-24 18:50:33 - INFO - [load.py:61] - Successfully loaded 949 records into database table 'retail.orders'.
+2026-07-24 18:50:33 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-24 18:50:33 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-24 18:50:33 - INFO - [main.py:85] - --- Step 5: Archiving Processed Data ---
+2026-07-24 18:50:33 - INFO - [main.py:30] - Successfully archived raw file 'k:\anti retail project1\data/raw\orders_raw_20260724_184839.csv' to 'k:\anti retail project1\data/archive\20260724_185033_orders_raw_20260724_184839.csv'.
+2026-07-24 18:50:33 - INFO - [main.py:88] - ==================================================
+2026-07-24 18:50:33 - INFO - [main.py:89] - ETL Pipeline Job Completed Successfully! Total Rows Loaded: 949
+2026-07-24 18:50:33 - INFO - [main.py:90] - ==================================================
+2026-07-24 22:55:02 - INFO - [main.py:45] - ==================================================
+2026-07-24 22:55:02 - INFO - [main.py:46] - Starting Retail Data Engineering ETL Pipeline Job
+2026-07-24 22:55:02 - INFO - [main.py:47] - ==================================================
+2026-07-24 22:55:02 - INFO - [main.py:55] - --- Step 1: Data Extraction ---
+2026-07-24 22:55:02 - INFO - [extract.py:45] - Selected file for extraction: k:\anti retail project1\data/raw\orders_raw_20260724_225454.csv
+2026-07-24 22:55:02 - INFO - [extract.py:57] - Extracting data from k:\anti retail project1\data/raw\orders_raw_20260724_225454.csv...
+2026-07-24 22:55:02 - INFO - [extract.py:59] - Successfully extracted 1000 rows from k:\anti retail project1\data/raw\orders_raw_20260724_225454.csv.
+2026-07-24 22:55:02 - INFO - [main.py:64] - --- Step 2: Data Validation ---
+2026-07-24 22:55:02 - INFO - [validation.py:45] - Starting validation on 1000 records...
+2026-07-24 22:55:02 - INFO - [validation.py:84] - Validation summary: Total=1000, Good=932, Bad=68
+2026-07-24 22:55:02 - WARNING - [validation.py:103] - Persisted 68 bad records to k:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-24 22:55:02 - INFO - [main.py:75] - --- Step 3: Data Transformation ---
+2026-07-24 22:55:02 - INFO - [transform.py:35] - Starting data transformation on 932 records...
+2026-07-24 22:55:02 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-24 22:55:02 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-24 22:55:02 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-24 22:55:02 - INFO - [transform.py:65] - Transformation complete. Prepared 932 rows for load step.
+2026-07-24 22:55:02 - INFO - [main.py:80] - --- Step 4: Database Loading ---
+2026-07-24 22:55:02 - INFO - [load.py:38] - Preparing to load 932 records into retail.orders...
+2026-07-24 22:55:02 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-24 22:55:02 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-24 22:55:02 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-24 22:55:02 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-24 22:55:02 - INFO - [database.py:98] - Executing bulk insertion for 932 records...
+2026-07-24 22:55:03 - INFO - [database.py:101] - Bulk insertion of 932 records completed successfully.
+2026-07-24 22:55:03 - INFO - [load.py:61] - Successfully loaded 932 records into database table 'retail.orders'.
+2026-07-24 22:55:03 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-24 22:55:03 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-24 22:55:03 - INFO - [main.py:85] - --- Step 5: Archiving Processed Data ---
+2026-07-24 22:55:03 - INFO - [main.py:30] - Successfully archived raw file 'k:\anti retail project1\data/raw\orders_raw_20260724_225454.csv' to 'k:\anti retail project1\data/archive\20260724_225503_orders_raw_20260724_225454.csv'.
+2026-07-24 22:55:03 - INFO - [main.py:88] - ==================================================
+2026-07-24 22:55:03 - INFO - [main.py:89] - ETL Pipeline Job Completed Successfully! Total Rows Loaded: 932
+2026-07-24 22:55:03 - INFO - [main.py:90] - ==================================================
+2026-07-25 10:05:15 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 10:05:15 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-25 10:05:15 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 10:05:15 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-25 10:05:15 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 10:05:15 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 10:05:15 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 10:05:15 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-25 10:05:15 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-2\test_extractor_empty_directory0
+2026-07-25 10:23:12 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 10:23:12 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-25 10:23:12 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 10:23:12 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-25 10:23:12 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 10:23:12 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 10:23:12 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 10:23:12 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-25 10:23:12 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-3\test_extractor_empty_directory0
+2026-07-25 10:24:16 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 10:24:17 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-25 10:24:17 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 10:24:17 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-25 10:24:17 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 10:24:17 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 10:24:17 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 10:24:17 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-25 10:24:17 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-4\test_extractor_empty_directory0
+2026-07-25 10:24:17 - INFO - [scd2_customer.py:91] - Expired 1 historical customer records.
+2026-07-25 10:24:17 - INFO - [scd2_customer.py:101] - Inserted 2 new/updated customer records.
+2026-07-25 10:24:17 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 1, 'UPDATE': 1}
+2026-07-25 11:56:01 - INFO - [retail_etl_dag.py:32] - Starting Retail ETL Pipeline Execution...
+2026-07-25 11:56:01 - INFO - [extract.py:45] - Selected file for extraction: K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv
+2026-07-25 11:56:01 - INFO - [extract.py:57] - Extracting data from K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv...
+2026-07-25 11:56:01 - INFO - [extract.py:59] - Successfully extracted 1000 rows from K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv.
+2026-07-25 11:56:01 - INFO - [validation.py:45] - Starting validation on 1000 records...
+2026-07-25 11:56:01 - INFO - [validation.py:84] - Validation summary: Total=1000, Good=942, Bad=58
+2026-07-25 11:56:01 - WARNING - [validation.py:103] - Persisted 58 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 11:56:01 - INFO - [transform.py:35] - Starting data transformation on 942 records...
+2026-07-25 11:56:01 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 11:56:01 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 11:56:01 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 11:56:01 - INFO - [transform.py:65] - Transformation complete. Prepared 942 rows for load step.
+2026-07-25 11:56:01 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 11:56:01 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 11:56:01 - WARNING - [database.py:38] - Exception encountered: 'PostgresConnectionManager' object has no attribute 'initialize_dim_tables'. Rolling back database transaction.
+2026-07-25 11:56:01 - INFO - [database.py:41] - Transaction rolled back successfully.
+2026-07-25 11:56:01 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 11:56:21 - INFO - [retail_etl_dag.py:32] - Starting Retail ETL Pipeline Execution...
+2026-07-25 11:56:21 - INFO - [extract.py:45] - Selected file for extraction: K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv
+2026-07-25 11:56:21 - INFO - [extract.py:57] - Extracting data from K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv...
+2026-07-25 11:56:21 - INFO - [extract.py:59] - Successfully extracted 1000 rows from K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv.
+2026-07-25 11:56:21 - INFO - [validation.py:45] - Starting validation on 1000 records...
+2026-07-25 11:56:21 - INFO - [validation.py:84] - Validation summary: Total=1000, Good=942, Bad=58
+2026-07-25 11:56:21 - WARNING - [validation.py:103] - Persisted 58 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 11:56:21 - INFO - [transform.py:35] - Starting data transformation on 942 records...
+2026-07-25 11:56:21 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 11:56:21 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 11:56:21 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 11:56:21 - INFO - [transform.py:65] - Transformation complete. Prepared 942 rows for load step.
+2026-07-25 11:56:21 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 11:56:21 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 11:56:21 - INFO - [database.py:122] - Initializing dim_customer and cdc_audit_log in schema 'retail'...
+2026-07-25 11:56:22 - INFO - [database.py:125] - Dimension and CDC tables initialized successfully.
+2026-07-25 11:56:22 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 942, 'UPDATE': 0}
+2026-07-25 11:56:22 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 11:56:22 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 11:56:22 - INFO - [load.py:38] - Preparing to load 942 records into retail.orders...
+2026-07-25 11:56:22 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 11:56:22 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 11:56:22 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-25 11:56:22 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-25 11:56:22 - INFO - [database.py:167] - Executing bulk insertion for 942 records...
+2026-07-25 11:56:22 - INFO - [database.py:170] - Bulk insertion of 942 records completed successfully.
+2026-07-25 11:56:22 - INFO - [load.py:61] - Successfully loaded 942 records into database table 'retail.orders'.
+2026-07-25 11:56:22 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 11:56:22 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 11:56:22 - INFO - [main.py:30] - Successfully archived raw file 'K:\anti retail project1\data/raw\orders_raw_20260725_115328.csv' to 'data/archive\20260725_115622_orders_raw_20260725_115328.csv'.
+2026-07-25 11:56:33 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 11:56:33 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-25 11:56:33 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 11:56:33 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-25 11:56:33 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 11:56:33 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 11:56:33 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 11:56:33 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-25 11:56:33 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-5\test_extractor_empty_directory0
+2026-07-25 11:56:33 - INFO - [scd2_customer.py:91] - Expired 1 historical customer records.
+2026-07-25 11:56:33 - INFO - [scd2_customer.py:101] - Inserted 2 new/updated customer records.
+2026-07-25 11:56:33 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 1, 'UPDATE': 1}
+2026-07-25 11:56:50 - INFO - [retail_etl_dag.py:32] - Starting Retail ETL Pipeline Execution...
+2026-07-25 11:56:50 - INFO - [extract.py:45] - Selected file for extraction: K:\anti retail project1\data/raw\orders_raw_20260725_115435.csv
+2026-07-25 11:56:50 - INFO - [extract.py:57] - Extracting data from K:\anti retail project1\data/raw\orders_raw_20260725_115435.csv...
+2026-07-25 11:56:50 - INFO - [extract.py:59] - Successfully extracted 1000 rows from K:\anti retail project1\data/raw\orders_raw_20260725_115435.csv.
+2026-07-25 11:56:50 - INFO - [validation.py:45] - Starting validation on 1000 records...
+2026-07-25 11:56:50 - INFO - [validation.py:84] - Validation summary: Total=1000, Good=927, Bad=73
+2026-07-25 11:56:50 - WARNING - [validation.py:103] - Persisted 73 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 11:56:50 - INFO - [transform.py:35] - Starting data transformation on 927 records...
+2026-07-25 11:56:50 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 11:56:50 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 11:56:50 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 11:56:50 - INFO - [transform.py:65] - Transformation complete. Prepared 927 rows for load step.
+2026-07-25 11:56:50 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 11:56:50 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 11:56:50 - INFO - [database.py:122] - Initializing dim_customer and cdc_audit_log in schema 'retail'...
+2026-07-25 11:56:50 - INFO - [database.py:125] - Dimension and CDC tables initialized successfully.
+2026-07-25 11:56:50 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 927, 'UPDATE': 0}
+2026-07-25 11:56:50 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 11:56:50 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 11:56:50 - INFO - [load.py:38] - Preparing to load 927 records into retail.orders...
+2026-07-25 11:56:50 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 11:56:50 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 11:56:50 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-25 11:56:50 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-25 11:56:50 - INFO - [database.py:167] - Executing bulk insertion for 927 records...
+2026-07-25 11:56:50 - INFO - [database.py:170] - Bulk insertion of 927 records completed successfully.
+2026-07-25 11:56:50 - INFO - [load.py:61] - Successfully loaded 927 records into database table 'retail.orders'.
+2026-07-25 11:56:50 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 11:56:50 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 11:56:50 - INFO - [main.py:30] - Successfully archived raw file 'K:\anti retail project1\data/raw\orders_raw_20260725_115435.csv' to 'data/archive\20260725_115650_orders_raw_20260725_115435.csv'.
+2026-07-25 14:35:05 - INFO - [multi_source_extractor.py:161] - ==================================================
+2026-07-25 14:35:05 - INFO - [multi_source_extractor.py:162] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:35:05 - INFO - [multi_source_extractor.py:163] - ==================================================
+2026-07-25 14:35:05 - INFO - [multi_source_extractor.py:57] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:35:23 - ERROR - [multi_source_extractor.py:82] - [API Source] Failed to read JSON payload K:\anti retail project1\data/raw\api_source\payments_api.json: Expecting value: line 1 column 1 (char 0)
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqllite_source\oltp_retail.db...
+2026-07-25 14:35:23 - WARNING - [multi_source_extractor.py:100] - [SQLite Source] Query failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:35:23 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:35:23 - ERROR - [multi_source_extractor.py:171] - [Clickstream JSON Source] Failed to read K:\anti retail project1\data/raw\json_source\web_clickstream.json: Expected object or value
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 0 records extracted.
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 0 records extracted.
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:35:23 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 0 records extracted.
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqllite_source\oltp_retail.db...
+2026-07-25 14:35:43 - WARNING - [multi_source_extractor.py:100] - [SQLite Source] Query failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2026-07-25 14:35:43 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:35:44 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 0 records extracted.
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:35:44 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqllite_source\oltp_retail.db...
+2026-07-25 14:36:03 - WARNING - [multi_source_extractor.py:101] - [SQLite Source] Query failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:36:03 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 0 records extracted.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:36:03 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:37:05 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:37:06 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 3 records extracted.
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:37:06 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:37:28 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 3 records extracted.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:37:28 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:37:28 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 14:37:28 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-25 14:37:28 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 14:37:28 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-25 14:37:28 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 14:37:28 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 14:37:28 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 14:37:28 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-25 14:37:28 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-6\test_extractor_empty_directory0
+2026-07-25 14:37:28 - INFO - [scd2_customer.py:91] - Expired 1 historical customer records.
+2026-07-25 14:37:28 - INFO - [scd2_customer.py:101] - Inserted 2 new/updated customer records.
+2026-07-25 14:37:28 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 1, 'UPDATE': 1}
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:39:16 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:39:17 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 3 records extracted.
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:39:17 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:41:04 - INFO - [retail_etl_dag.py:32] - Starting Retail ETL Pipeline Execution...
+2026-07-25 14:41:04 - INFO - [extract.py:40] - No CSV files found in raw directory: k:\anti retail project1\data/raw
+2026-07-25 14:41:41 - INFO - [retail_etl_dag.py:33] - Starting Multi-Source Retail ETL Pipeline Execution...
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:41:41 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 3 records extracted.
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:41:41 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:41:41 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 14:41:41 - INFO - [validation.py:84] - Validation summary: Total=3, Good=3, Bad=0
+2026-07-25 14:41:41 - INFO - [transform.py:35] - Starting data transformation on 3 records...
+2026-07-25 14:41:41 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 14:41:41 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 14:41:41 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 14:41:41 - INFO - [transform.py:65] - Transformation complete. Prepared 3 rows for load step.
+2026-07-25 14:41:41 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 14:41:41 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 14:41:41 - INFO - [database.py:122] - Initializing dim_customer and cdc_audit_log in schema 'retail'...
+2026-07-25 14:41:41 - INFO - [database.py:125] - Dimension and CDC tables initialized successfully.
+2026-07-25 14:41:42 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 0, 'UPDATE': 3}
+2026-07-25 14:41:42 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 14:41:42 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 14:41:42 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 14:41:42 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 14:41:42 - INFO - [database.py:122] - Initializing dim_customer and cdc_audit_log in schema 'retail'...
+2026-07-25 14:41:42 - INFO - [database.py:125] - Dimension and CDC tables initialized successfully.
+2026-07-25 14:41:42 - INFO - [scd2_customer.py:101] - Inserted 3 new/updated customer records.
+2026-07-25 14:41:42 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 14:41:42 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 14:41:42 - INFO - [load.py:38] - Preparing to load 3 records into retail.orders...
+2026-07-25 14:41:42 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 14:41:42 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 14:41:42 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-25 14:41:42 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-25 14:41:42 - INFO - [database.py:167] - Executing bulk insertion for 3 records...
+2026-07-25 14:41:42 - INFO - [database.py:170] - Bulk insertion of 3 records completed successfully.
+2026-07-25 14:41:42 - INFO - [load.py:61] - Successfully loaded 3 records into database table 'retail.orders'.
+2026-07-25 14:41:42 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 14:41:42 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from K:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from K:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at K:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:41:49 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from K:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 3 records extracted.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:41:49 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:41:49 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 14:41:49 - INFO - [validation.py:84] - Validation summary: Total=3, Good=1, Bad=2
+2026-07-25 14:41:49 - WARNING - [validation.py:103] - Persisted 2 bad records to K:\anti retail project1\data/bad_records\bad_orders.csv
+2026-07-25 14:41:49 - INFO - [transform.py:35] - Starting data transformation on 1 records...
+2026-07-25 14:41:49 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 14:41:49 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 14:41:49 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 14:41:49 - INFO - [transform.py:65] - Transformation complete. Prepared 1 rows for load step.
+2026-07-25 14:41:49 - INFO - [extract.py:40] - No CSV files found in raw directory: C:\Users\kunal\AppData\Local\Temp\pytest-of-kunal\pytest-7\test_extractor_empty_directory0
+2026-07-25 14:41:49 - INFO - [scd2_customer.py:91] - Expired 1 historical customer records.
+2026-07-25 14:41:49 - INFO - [scd2_customer.py:101] - Inserted 2 new/updated customer records.
+2026-07-25 14:41:49 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 1, 'UPDATE': 1}
+2026-07-25 14:42:09 - INFO - [retail_etl_dag.py:33] - Starting Multi-Source Retail ETL Pipeline Execution...
+2026-07-25 14:42:09 - INFO - [multi_source_extractor.py:176] - ==================================================
+2026-07-25 14:42:09 - INFO - [multi_source_extractor.py:177] - Starting Multi-Source Enterprise Extraction Engine
+2026-07-25 14:42:09 - INFO - [multi_source_extractor.py:178] - ==================================================
+2026-07-25 14:42:09 - INFO - [multi_source_extractor.py:58] - [CSV Source] Extracting data from k:\anti retail project1\data/raw\csv_source\store_orders.csv...
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:77] - [API Source] Extracting JSON payload from k:\anti retail project1\data/raw\api_source\payments_api.json...
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:95] - [SQLite Source] Querying SQLite database at k:\anti retail project1\data/raw\sqlite_source\oltp_retail.db...
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:114] - [PostgreSQL Source] Connecting to Host=localhost, DB=retail_db...
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:124] - [PostgreSQL Source] Extracted 4755 records.
+2026-07-25 14:42:10 - WARNING - [multi_source_extractor.py:133] - [MySQL Source] PyMySQL package not installed.
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:168] - [Clickstream JSON Source] Extracting clickstream from k:\anti retail project1\data/raw\json_source\web_clickstream.json...
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:193] - Source 'csv_orders': 3 records extracted.
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:193] - Source 'api_payments': 3 records extracted.
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:193] - Source 'sqlite_customers': 3 records extracted.
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:193] - Source 'postgresql_orders': 4755 records extracted.
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:193] - Source 'mysql_cart': 0 records extracted.
+2026-07-25 14:42:10 - INFO - [multi_source_extractor.py:193] - Source 'clickstream_events': 3 records extracted.
+2026-07-25 14:42:10 - INFO - [validation.py:45] - Starting validation on 3 records...
+2026-07-25 14:42:10 - INFO - [validation.py:84] - Validation summary: Total=3, Good=3, Bad=0
+2026-07-25 14:42:10 - INFO - [transform.py:35] - Starting data transformation on 3 records...
+2026-07-25 14:42:10 - INFO - [transform.py:51] - Successfully converted column datatypes.
+2026-07-25 14:42:10 - INFO - [transform.py:58] - Successfully calculated 'total_amount' derived column.
+2026-07-25 14:42:10 - INFO - [transform.py:63] - Successfully added 'load_timestamp' audit column.
+2026-07-25 14:42:10 - INFO - [transform.py:65] - Transformation complete. Prepared 3 rows for load step.
+2026-07-25 14:42:10 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 14:42:10 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 14:42:10 - INFO - [database.py:122] - Initializing dim_customer and cdc_audit_log in schema 'retail'...
+2026-07-25 14:42:10 - INFO - [database.py:125] - Dimension and CDC tables initialized successfully.
+2026-07-25 14:42:10 - INFO - [cdc_handler.py:53] - CDC Summary for table 'orders': {'INSERT': 0, 'UPDATE': 3}
+2026-07-25 14:42:10 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 14:42:10 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 14:42:10 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 14:42:10 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 14:42:10 - INFO - [database.py:122] - Initializing dim_customer and cdc_audit_log in schema 'retail'...
+2026-07-25 14:42:10 - INFO - [database.py:125] - Dimension and CDC tables initialized successfully.
+2026-07-25 14:42:10 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 14:42:10 - INFO - [database.py:54] - Database connection and cursor closed safely.
+2026-07-25 14:42:10 - INFO - [load.py:38] - Preparing to load 3 records into retail.orders...
+2026-07-25 14:42:10 - INFO - [database.py:20] - Attempting to connect to PostgreSQL database...
+2026-07-25 14:42:10 - INFO - [database.py:29] - PostgreSQL connection established successfully.
+2026-07-25 14:42:10 - INFO - [database.py:80] - Initializing schema and table 'retail.orders'...
+2026-07-25 14:42:10 - INFO - [database.py:84] - Schema and table initialized successfully.
+2026-07-25 14:42:10 - INFO - [database.py:167] - Executing bulk insertion for 3 records...
+2026-07-25 14:42:10 - INFO - [database.py:170] - Bulk insertion of 3 records completed successfully.
+2026-07-25 14:42:10 - INFO - [load.py:61] - Successfully loaded 3 records into database table 'retail.orders'.
+2026-07-25 14:42:10 - INFO - [database.py:47] - Transaction committed successfully.
+2026-07-25 14:42:10 - INFO - [database.py:54] - Database connection and cursor closed safely.

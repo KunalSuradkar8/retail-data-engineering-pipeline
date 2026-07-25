@@ -11,3 +11,325 @@ order_id,customer_id,product_id,quantity,price,rejection_reason
 106,6,506,,30.0,Null values found; Invalid/Negative quantity
 2,102,502,-1,50.0,Invalid/Negative quantity
 3,103,503,3,-20.0,Invalid/Negative price
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
+23817,,501,1,323.82,Null values found
+23823,223.0,515,-3,421.7,Invalid/Negative quantity
+23853,482.0,538,-4,181.04,Invalid/Negative quantity
+23857,495.0,516,5,-33.31,Invalid/Negative price
+23859,399.0,520,-5,460.18,Invalid/Negative quantity
+23882,466.0,533,-2,481.67,Invalid/Negative quantity
+23891,,516,4,290.39,Null values found
+23892,118.0,534,-4,26.19,Invalid/Negative quantity
+23902,,527,2,157.32,Null values found
+23960,,510,8,319.73,Null values found
+23965,,537,7,308.37,Null values found
+24051,377.0,513,-2,220.16,Invalid/Negative quantity
+24080,113.0,524,-4,234.7,Invalid/Negative quantity
+24092,118.0,540,1,443.51,Duplicate order_id found
+24092,128.0,510,3,30.0,Duplicate order_id found
+24140,233.0,546,5,-64.71,Invalid/Negative price
+24150,449.0,546,2,437.56,Duplicate order_id found
+24150,136.0,509,3,390.8,Duplicate order_id found
+24158,265.0,512,-3,178.46,Invalid/Negative quantity
+24198,412.0,532,-4,439.28,Invalid/Negative quantity
+24215,395.0,524,-3,485.2,Invalid/Negative quantity
+24243,,536,6,194.59,Null values found
+24250,483.0,523,-3,243.22,Invalid/Negative quantity
+24263,399.0,518,-5,41.57,Invalid/Negative quantity
+24274,122.0,535,-5,415.17,Invalid/Negative quantity
+24297,437.0,530,3,92.48,Duplicate order_id found
+24297,480.0,534,5,56.21,Duplicate order_id found
+24315,147.0,512,2,-71.05,Invalid/Negative price
+24346,496.0,543,10,-23.19,Invalid/Negative price
+24384,414.0,508,3,-65.05,Invalid/Negative price
+24413,119.0,537,8,-14.12,Invalid/Negative price
+24431,,537,9,222.04,Null values found
+24465,313.0,542,6,-19.59,Invalid/Negative price
+24601,485.0,506,-1,86.58,Invalid/Negative quantity
+24604,362.0,517,6,-78.84,Invalid/Negative price
+24613,56.0,514,5,54.25,Duplicate order_id found
+24613,389.0,543,7,339.26,Duplicate order_id found
+24620,448.0,503,4,-43.89,Invalid/Negative price
+24627,328.0,538,1,179.59,Duplicate order_id found
+24627,79.0,550,10,367.5,Duplicate order_id found
+24666,258.0,520,-5,388.45,Invalid/Negative quantity
+24687,249.0,535,8,182.09,Duplicate order_id found
+24687,330.0,523,1,192.31,Duplicate order_id found
+24693,468.0,530,2,-27.88,Invalid/Negative price
+24721,408.0,535,-3,220.52,Invalid/Negative quantity
+24724,108.0,504,-4,424.29,Invalid/Negative quantity
+24733,115.0,549,-5,339.19,Invalid/Negative quantity
+24743,,519,2,183.35,Null values found
+24745,366.0,543,-5,276.33,Invalid/Negative quantity
+24748,,536,9,395.97,Null values found
+24789,76.0,508,-2,296.88,Invalid/Negative quantity
+17078,222.0,511,6,44.52,Duplicate order_id found
+17079,238.0,548,8,-50.32,Invalid/Negative price
+17078,486.0,520,8,39.84,Duplicate order_id found
+17084,424.0,501,9,-57.1,Invalid/Negative price
+17102,31.0,520,-1,239.72,Invalid/Negative quantity
+17122,443.0,542,-4,489.93,Invalid/Negative quantity
+17123,38.0,537,2,243.71,Duplicate order_id found
+17123,391.0,541,6,485.18,Duplicate order_id found
+17152,408.0,548,6,168.42,Duplicate order_id found
+17152,473.0,530,5,33.96,Duplicate order_id found
+17163,225.0,504,6,177.91,Duplicate order_id found
+17163,38.0,508,3,38.52,Duplicate order_id found
+17168,103.0,505,-2,56.38,Invalid/Negative quantity
+17219,,515,5,26.04,Null values found
+17228,162.0,542,-1,85.7,Invalid/Negative quantity
+17251,131.0,515,7,65.05,Duplicate order_id found
+17251,59.0,506,3,424.51,Duplicate order_id found
+17262,302.0,531,7,-50.37,Invalid/Negative price
+17290,,520,9,132.75,Null values found
+17319,,523,1,347.05,Null values found
+17324,,540,10,55.56,Null values found
+17366,130.0,508,-2,497.94,Invalid/Negative quantity
+17372,259.0,547,7,-99.15,Invalid/Negative price
+17385,342.0,548,-5,162.68,Invalid/Negative quantity
+17388,374.0,511,-4,466.01,Invalid/Negative quantity
+17418,,526,3,471.61,Null values found
+17430,148.0,530,1,-65.6,Invalid/Negative price
+17441,52.0,547,7,180.31,Duplicate order_id found
+17441,474.0,548,10,274.39,Duplicate order_id found
+17456,46.0,529,7,-44.67,Invalid/Negative price
+17467,317.0,506,4,35.96,Duplicate order_id found
+17467,434.0,520,10,419.02,Duplicate order_id found
+17504,205.0,510,-4,15.3,Invalid/Negative quantity
+17527,6.0,506,2,-47.56,Invalid/Negative price
+17557,,510,4,175.0,Null values found
+17592,111.0,529,-1,66.76,Invalid/Negative quantity
+17602,432.0,533,6,-31.7,Invalid/Negative price
+17614,250.0,526,7,60.91,Duplicate order_id found
+17614,198.0,526,9,441.38,Duplicate order_id found
+17712,98.0,529,2,293.7,Duplicate order_id found
+17712,206.0,527,10,189.75,Duplicate order_id found
+17762,271.0,546,5,-10.2,Invalid/Negative price
+17768,304.0,522,9,100.3,Duplicate order_id found
+17768,95.0,546,9,137.22,Duplicate order_id found
+17791,324.0,524,7,334.49,Duplicate order_id found
+17791,348.0,514,1,378.17,Duplicate order_id found
+17795,,542,2,351.09,Null values found
+17800,210.0,521,9,387.52,Duplicate order_id found
+17800,330.0,506,3,113.22,Duplicate order_id found
+17836,372.0,527,3,-71.58,Invalid/Negative price
+17853,42.0,506,2,-70.02,Invalid/Negative price
+17861,195.0,529,2,-52.88,Invalid/Negative price
+17864,316.0,515,8,-76.31,Invalid/Negative price
+17898,416.0,533,10,452.75,Duplicate order_id found
+17898,74.0,511,4,396.93,Duplicate order_id found
+17940,,539,5,467.84,Null values found
+17975,47.0,517,-3,79.41,Invalid/Negative quantity
+17983,18.0,515,3,40.59,Duplicate order_id found
+17983,250.0,501,10,79.23,Duplicate order_id found
+18019,335.0,506,5,229.24,Duplicate order_id found
+18019,38.0,510,3,377.49,Duplicate order_id found
+18022,,518,5,137.09,Null values found
+18025,117.0,512,2,449.56,Duplicate order_id found
+18025,280.0,540,8,439.03,Duplicate order_id found
+18039,,520,10,444.1,Null values found
+18044,436.0,528,6,-23.16,Invalid/Negative price
+18054,,512,9,16.32,Null values found
+18068,52.0,537,2,-24.38,Invalid/Negative price
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
+31245,364.0,511,9,414.49,Duplicate order_id found
+31245,126.0,517,7,242.11,Duplicate order_id found
+31264,259.0,512,4,-36.54,Invalid/Negative price
+31271,154.0,528,-4,395.18,Invalid/Negative quantity
+31279,282.0,525,8,-11.46,Invalid/Negative price
+31313,152.0,502,1,-13.3,Invalid/Negative price
+31325,,508,8,18.69,Null values found
+31336,195.0,518,-5,431.02,Invalid/Negative quantity
+31352,24.0,531,4,19.34,Duplicate order_id found
+31352,420.0,503,3,353.7,Duplicate order_id found
+31366,422.0,523,-4,81.42,Invalid/Negative quantity
+31396,500.0,545,-2,160.42,Invalid/Negative quantity
+31406,368.0,519,-3,499.25,Invalid/Negative quantity
+31411,418.0,507,1,423.0,Duplicate order_id found
+31411,483.0,512,4,265.4,Duplicate order_id found
+31414,223.0,511,6,-95.64,Invalid/Negative price
+31496,412.0,515,7,-94.31,Invalid/Negative price
+31498,,508,10,295.8,Null values found
+31510,,547,8,29.85,Null values found
+31527,334.0,545,10,-36.27,Invalid/Negative price
+31535,397.0,520,10,480.31,Duplicate order_id found
+31535,298.0,549,2,148.01,Duplicate order_id found
+31539,,513,4,177.02,Null values found
+31559,,514,9,197.09,Null values found
+31563,466.0,505,6,-27.88,Invalid/Negative price
+31603,32.0,549,-1,44.88,Invalid/Negative quantity
+31607,,535,8,115.17,Null values found
+31624,271.0,522,-4,61.95,Invalid/Negative quantity
+31635,99.0,512,-1,296.33,Invalid/Negative quantity
+31640,422.0,538,-1,482.33,Invalid/Negative quantity
+31689,53.0,532,-1,237.66,Invalid/Negative quantity
+31744,334.0,510,10,499.71,Duplicate order_id found
+31744,435.0,540,1,365.25,Duplicate order_id found
+31749,,550,1,165.54,Null values found
+31768,26.0,543,10,-85.47,Invalid/Negative price
+31778,163.0,540,-5,278.08,Invalid/Negative quantity
+31786,408.0,527,10,-69.81,Invalid/Negative price
+31790,179.0,527,2,-64.09,Invalid/Negative price
+31828,298.0,543,9,113.88,Duplicate order_id found
+31828,398.0,515,3,278.86,Duplicate order_id found
+31859,451.0,515,9,-30.77,Invalid/Negative price
+31880,313.0,501,-5,314.1,Invalid/Negative quantity
+31923,374.0,522,-1,164.49,Invalid/Negative quantity
+31969,493.0,525,-2,469.99,Invalid/Negative quantity
+31972,169.0,531,3,-14.57,Invalid/Negative price
+31982,373.0,522,-3,118.6,Invalid/Negative quantity
+31984,351.0,541,7,87.3,Duplicate order_id found
+31984,462.0,550,8,186.29,Duplicate order_id found
+32034,213.0,527,-1,183.22,Invalid/Negative quantity
+32040,143.0,533,-2,261.81,Invalid/Negative quantity
+32063,15.0,545,9,-79.82,Invalid/Negative price
+32089,,501,4,471.57,Null values found
+32120,,543,5,184.87,Null values found
+32160,443.0,503,5,-31.75,Invalid/Negative price
+32169,424.0,548,5,-96.47,Invalid/Negative price
+32170,301.0,501,6,20.14,Duplicate order_id found
+32171,,501,5,263.17,Null values found
+32170,365.0,502,10,123.33,Duplicate order_id found
+31245,364.0,511,9,414.49,Duplicate order_id found
+31245,126.0,517,7,242.11,Duplicate order_id found
+31264,259.0,512,4,-36.54,Invalid/Negative price
+31271,154.0,528,-4,395.18,Invalid/Negative quantity
+31279,282.0,525,8,-11.46,Invalid/Negative price
+31313,152.0,502,1,-13.3,Invalid/Negative price
+31325,,508,8,18.69,Null values found
+31336,195.0,518,-5,431.02,Invalid/Negative quantity
+31352,24.0,531,4,19.34,Duplicate order_id found
+31352,420.0,503,3,353.7,Duplicate order_id found
+31366,422.0,523,-4,81.42,Invalid/Negative quantity
+31396,500.0,545,-2,160.42,Invalid/Negative quantity
+31406,368.0,519,-3,499.25,Invalid/Negative quantity
+31411,418.0,507,1,423.0,Duplicate order_id found
+31411,483.0,512,4,265.4,Duplicate order_id found
+31414,223.0,511,6,-95.64,Invalid/Negative price
+31496,412.0,515,7,-94.31,Invalid/Negative price
+31498,,508,10,295.8,Null values found
+31510,,547,8,29.85,Null values found
+31527,334.0,545,10,-36.27,Invalid/Negative price
+31535,397.0,520,10,480.31,Duplicate order_id found
+31535,298.0,549,2,148.01,Duplicate order_id found
+31539,,513,4,177.02,Null values found
+31559,,514,9,197.09,Null values found
+31563,466.0,505,6,-27.88,Invalid/Negative price
+31603,32.0,549,-1,44.88,Invalid/Negative quantity
+31607,,535,8,115.17,Null values found
+31624,271.0,522,-4,61.95,Invalid/Negative quantity
+31635,99.0,512,-1,296.33,Invalid/Negative quantity
+31640,422.0,538,-1,482.33,Invalid/Negative quantity
+31689,53.0,532,-1,237.66,Invalid/Negative quantity
+31744,334.0,510,10,499.71,Duplicate order_id found
+31744,435.0,540,1,365.25,Duplicate order_id found
+31749,,550,1,165.54,Null values found
+31768,26.0,543,10,-85.47,Invalid/Negative price
+31778,163.0,540,-5,278.08,Invalid/Negative quantity
+31786,408.0,527,10,-69.81,Invalid/Negative price
+31790,179.0,527,2,-64.09,Invalid/Negative price
+31828,298.0,543,9,113.88,Duplicate order_id found
+31828,398.0,515,3,278.86,Duplicate order_id found
+31859,451.0,515,9,-30.77,Invalid/Negative price
+31880,313.0,501,-5,314.1,Invalid/Negative quantity
+31923,374.0,522,-1,164.49,Invalid/Negative quantity
+31969,493.0,525,-2,469.99,Invalid/Negative quantity
+31972,169.0,531,3,-14.57,Invalid/Negative price
+31982,373.0,522,-3,118.6,Invalid/Negative quantity
+31984,351.0,541,7,87.3,Duplicate order_id found
+31984,462.0,550,8,186.29,Duplicate order_id found
+32034,213.0,527,-1,183.22,Invalid/Negative quantity
+32040,143.0,533,-2,261.81,Invalid/Negative quantity
+32063,15.0,545,9,-79.82,Invalid/Negative price
+32089,,501,4,471.57,Null values found
+32120,,543,5,184.87,Null values found
+32160,443.0,503,5,-31.75,Invalid/Negative price
+32169,424.0,548,5,-96.47,Invalid/Negative price
+32170,301.0,501,6,20.14,Duplicate order_id found
+32171,,501,5,263.17,Null values found
+32170,365.0,502,10,123.33,Duplicate order_id found
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
+15729,88.0,542,-5,228.02,Invalid/Negative quantity
+15736,101.0,539,-4,347.08,Invalid/Negative quantity
+15742,188.0,513,-5,346.96,Invalid/Negative quantity
+15756,356.0,548,-3,445.36,Invalid/Negative quantity
+15759,280.0,507,8,329.24,Duplicate order_id found
+15759,423.0,510,7,229.13,Duplicate order_id found
+15788,371.0,545,-4,13.6,Invalid/Negative quantity
+15814,241.0,538,7,-67.24,Invalid/Negative price
+15819,320.0,541,10,-59.43,Invalid/Negative price
+15851,276.0,530,2,-65.24,Invalid/Negative price
+15869,280.0,547,-2,84.71,Invalid/Negative quantity
+15876,374.0,537,-5,12.31,Invalid/Negative quantity
+15877,58.0,525,2,-42.65,Invalid/Negative price
+15883,261.0,512,7,475.35,Duplicate order_id found
+15883,216.0,508,2,60.65,Duplicate order_id found
+15896,300.0,516,-2,191.4,Invalid/Negative quantity
+15915,264.0,540,7,226.87,Duplicate order_id found
+15916,,549,4,318.6,Null values found
+15915,37.0,542,6,254.5,Duplicate order_id found
+15928,80.0,506,1,-11.97,Invalid/Negative price
+15935,365.0,537,-2,123.98,Invalid/Negative quantity
+15936,220.0,513,8,-68.1,Invalid/Negative price
+15937,,535,4,485.11,Null values found
+15952,380.0,547,3,-85.96,Invalid/Negative price
+16006,298.0,507,8,-37.52,Invalid/Negative price
+16010,293.0,509,1,-41.57,Invalid/Negative price
+16016,330.0,515,-1,324.23,Invalid/Negative quantity
+16019,90.0,543,2,-45.42,Invalid/Negative price
+16023,368.0,507,7,-48.63,Invalid/Negative price
+16041,,504,1,230.91,Null values found
+16047,105.0,538,-4,462.01,Invalid/Negative quantity
+16055,9.0,537,2,159.54,Duplicate order_id found
+16055,384.0,546,6,167.11,Duplicate order_id found
+16059,353.0,502,6,-57.72,Invalid/Negative price
+16062,434.0,523,-4,124.08,Invalid/Negative quantity
+16080,414.0,512,-1,230.22,Invalid/Negative quantity
+16117,482.0,548,9,-85.63,Invalid/Negative price
+16146,,538,6,402.73,Null values found
+16153,135.0,528,6,410.08,Duplicate order_id found
+16153,483.0,536,6,217.0,Duplicate order_id found
+16196,289.0,538,6,-26.99,Invalid/Negative price
+16273,,543,5,123.95,Null values found
+16285,251.0,544,10,37.78,Duplicate order_id found
+16285,15.0,516,9,330.76,Duplicate order_id found
+16373,91.0,549,9,168.34,Duplicate order_id found
+16373,44.0,510,5,366.67,Duplicate order_id found
+16385,346.0,538,-1,261.4,Invalid/Negative quantity
+16393,451.0,535,-3,258.95,Invalid/Negative quantity
+16397,236.0,516,-4,51.33,Invalid/Negative quantity
+16402,401.0,541,4,-38.66,Invalid/Negative price
+16421,,543,10,211.83,Null values found
+16433,157.0,547,4,-72.91,Invalid/Negative price
+16475,88.0,520,5,468.79,Duplicate order_id found
+16475,345.0,536,5,37.31,Duplicate order_id found
+16482,202.0,531,10,-23.22,Invalid/Negative price
+16507,375.0,517,5,181.23,Duplicate order_id found
+16507,418.0,534,9,77.83,Duplicate order_id found
+16516,,519,10,201.54,Null values found
+16533,149.0,544,6,348.56,Duplicate order_id found
+16533,437.0,538,8,362.57,Duplicate order_id found
+16547,28.0,514,8,-67.54,Invalid/Negative price
+16563,47.0,515,2,-18.54,Invalid/Negative price
+16597,426.0,540,6,79.95,Duplicate order_id found
+16598,,504,10,465.5,Null values found
+16597,425.0,508,2,407.43,Duplicate order_id found
+16630,395.0,529,3,107.86,Duplicate order_id found
+16630,472.0,505,9,153.6,Duplicate order_id found
+16666,308.0,537,8,-76.1,Invalid/Negative price
+16672,232.0,503,1,-34.67,Invalid/Negative price
+16696,274.0,550,-5,125.1,Invalid/Negative quantity
+16703,436.0,518,10,-90.6,Invalid/Negative price
+16706,424.0,515,2,-66.11,Invalid/Negative price
+16708,362.0,543,-3,127.11,Invalid/Negative quantity
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price
+2,102,502,-1,50.0,Invalid/Negative quantity
+3,103,503,3,-20.0,Invalid/Negative price

@@ -8,6 +8,8 @@ if PROJECT_ROOT not in sys.path:
 import shutil
 import logging
 from datetime import datetime
+from scripts.scd2_customer import CustomerSCD2Processor
+from scripts.cdc_handler import CDCProcessor
 from utils.config_loader import ConfigLoader
 from utils.logger import setup_logger
 from scripts.extract import DataExtractor
@@ -75,6 +77,12 @@ def run_pipeline() -> None:
         logger.info("--- Step 3: Data Transformation ---")
         transformer = DataTransformer(config, logger=logger)
         transformed_df = transformer.transform(good_df)
+
+        # Step 3.5: Change Data Capture (CDC)
+        logger.info("--- Step 3.5: Change Data Capture (CDC) Audit ---")
+        cdc_processor = CDCProcessor(config, logger=logger)
+        cdc_processor.capture_changes("orders", transformed_df, key_column="order_id")
+
 
         # Step 4: Loading
         logger.info("--- Step 4: Database Loading ---")

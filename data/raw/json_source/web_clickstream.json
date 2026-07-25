@@ -1,0 +1,20 @@
+[
+  {
+    "session_id": "SESS_101",
+    "customer_id": 201,
+    "event": "ADD_TO_CART",
+    "device": "Mobile"
+  },
+  {
+    "session_id": "SESS_102",
+    "customer_id": 202,
+    "event": "CHECKOUT",
+    "device": "Desktop"
+  },
+  {
+    "session_id": "SESS_103",
+    "customer_id": 203,
+    "event": "SEARCH",
+    "device": "Tablet"
+  }
+]
