@@ -3,7 +3,7 @@
 env/
 venv/
 
-# Environment Variables & Password
+# Environment Variables & Passwords
 .env
 
 # Python Cache & Bytecode
@@ -11,14 +11,16 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Logs & Temporary Data Files
-logs/*.log
-data/raw/*.csv
-!data/raw/.gitkeep
-data/bad_records/*.csv
-!data/bad_records/.gitkeep
-data/archive/*.csv
-!data/archive/.gitkeep
+# Logs
+logs/
+*.log
+
+# Data Files & Databases
+data/raw/
+data/processed/
+data/bad_records/
+data/archive/
+*.db
 
 # IDE Configs
 .vscode/

@@ -34,4 +34,4 @@ jobs:
         DB_PASSWORD: postgrespassword
         DB_SCHEMA: retail
       run: |
-        python -m pytest -v
+        python -m pytest tests/ -v

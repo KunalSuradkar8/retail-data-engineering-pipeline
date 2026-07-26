@@ -15,6 +15,15 @@
         "target_schema": "retail",
         "target_table": "orders"
     },
+    "notifications": {
+        "slack_webhook_url": null,
+        "email": {
+            "smtp_server": "smtp.gmail.com",
+            "smtp_port": 587,
+            "sender_email": null,
+            "recipient_email": "eagleeyeroller90@gmail.com"
+        }
+    },
     "validation_rules": {
         "required_columns": [
             "order_id",

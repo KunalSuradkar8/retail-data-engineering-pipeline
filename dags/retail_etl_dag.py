@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 
 # Try importing Airflow; fallback gracefully if Airflow package is not installed locally
 try:
-    from airflow import DAG
-    from airflow.operators.python import PythonOperator
+    from airflow import DAG  # type: ignore
+    from airflow.operators.python import PythonOperator  # type: ignore
     HAS_AIRFLOW = True
 except ImportError:
     HAS_AIRFLOW = False
