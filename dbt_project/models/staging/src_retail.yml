@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: retail
+    schema: retail
+    tables:
+      - name: orders
+      - name: dim_customer

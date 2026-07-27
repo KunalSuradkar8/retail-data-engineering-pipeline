@@ -1,0 +1,12 @@
+retail_dbt_profile:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      password: admin123
+      dbname: retail_db
+      schema: dbt_retail
+      threads: 4

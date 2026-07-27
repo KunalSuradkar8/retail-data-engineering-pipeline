@@ -15,6 +15,11 @@ __pycache__/
 logs/
 *.log
 
+# dbt Artifacts & Compiled Files
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
 # Data Files & Databases
 data/raw/
 data/processed/

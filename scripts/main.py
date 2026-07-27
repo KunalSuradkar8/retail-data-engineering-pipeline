@@ -18,6 +18,7 @@ from scripts.multi_source_extractor import MultiSourceExtractor
 from scripts.validation import DataValidator
 from scripts.transform import DataTransformer
 from scripts.load import DataLoader
+from scripts.analytics_datamart import AnalyticsDataMart
 
 def archive_processed_file(file_path: str, archive_dir: str, logger: logging.Logger) -> None:
     """
@@ -87,17 +88,17 @@ def run_pipeline() -> None:
             logger.info("Pipeline completed with 0 records loaded.")
             return
 
-        # Step 3: Transformation
+        # Step 3: Data Transformation
         logger.info("--- Step 3: Data Transformation ---")
         transformer = DataTransformer(config, logger=logger)
         transformed_df = transformer.transform(good_df)
 
-        # Step 3.5: Change Data Capture (CDC)
+        # Step 3.5: Change Data Capture (CDC) Audit
         logger.info("--- Step 3.5: Change Data Capture (CDC) Audit ---")
         cdc_processor = CDCProcessor(config, logger=logger)
         cdc_processor.capture_changes("orders", transformed_df, key_column="order_id")
 
-        # Step 4: SCD Type 2 Customer Dimension Processing
+        # Step 4: Customer Dimension (SCD Type 2) Processing
         customers_df = sources_data.get("sqlite_customers")
         if customers_df is not None and not customers_df.empty:
             logger.info("--- Step 4: Customer Dimension (SCD Type 2) Processing ---")
@@ -109,6 +110,23 @@ def run_pipeline() -> None:
         logger.info("--- Step 5: Database Loading ---")
         loader = DataLoader(config, logger=logger)
         rows_inserted = loader.load(transformed_df)
+
+        # Step 5.5: Refresh Analytics Data Marts (fact_daily_sales, customer_360)
+        logger.info("--- Step 5.5: Refreshing Analytics Data Marts ---")
+        datamart = AnalyticsDataMart(config, logger=logger)
+        mart_metrics = datamart.build_data_marts(sources_data, transformed_df)
+
+        # Step 5.6: Execute dbt Data Warehouse Transformations & Quality Tests
+        logger.info("--- Step 5.6: Executing dbt Data Warehouse Models & Tests ---")
+        dbt_project_dir = os.path.join(PROJECT_ROOT, "dbt_project")
+        dbt_exe = os.path.join(PROJECT_ROOT, ".venv", "Scripts", "dbt.exe")
+        if os.path.exists(dbt_exe):
+            import subprocess
+            logger.info("Running dbt models build...")
+            subprocess.run([dbt_exe, "run", "--project-dir", dbt_project_dir, "--profiles-dir", dbt_project_dir], check=True)
+            logger.info("Running dbt data quality tests...")
+            subprocess.run([dbt_exe, "test", "--project-dir", dbt_project_dir, "--profiles-dir", dbt_project_dir], check=True)
+            logger.info("dbt Data Warehouse Models & Tests executed successfully!")
 
         # Step 6: Generate Summary Report & Attachment
         processed_dir = config.get("data_paths.processed_dir", "data/processed")

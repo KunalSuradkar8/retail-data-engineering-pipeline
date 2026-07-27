@@ -1,19 +1,61 @@
 [
   {
-    "session_id": "SESS_101",
-    "customer_id": 201,
+    "session_id": "SESS_9726",
+    "customer_id": 584,
+    "event": "SEARCH",
+    "device": "Mobile"
+  },
+  {
+    "session_id": "SESS_6444",
+    "customer_id": 585,
+    "event": "ADD_TO_CART",
+    "device": "Tablet"
+  },
+  {
+    "session_id": "SESS_5552",
+    "customer_id": 586,
+    "event": "ADD_TO_CART",
+    "device": "Desktop"
+  },
+  {
+    "session_id": "SESS_1788",
+    "customer_id": 587,
+    "event": "VIEW_ITEM",
+    "device": "Mobile"
+  },
+  {
+    "session_id": "SESS_6821",
+    "customer_id": 588,
+    "event": "SEARCH",
+    "device": "Desktop"
+  },
+  {
+    "session_id": "SESS_7116",
+    "customer_id": 584,
+    "event": "SEARCH",
+    "device": "Desktop"
+  },
+  {
+    "session_id": "SESS_5837",
+    "customer_id": 585,
     "event": "ADD_TO_CART",
     "device": "Mobile"
   },
   {
-    "session_id": "SESS_102",
-    "customer_id": 202,
+    "session_id": "SESS_1474",
+    "customer_id": 586,
     "event": "CHECKOUT",
     "device": "Desktop"
   },
   {
-    "session_id": "SESS_103",
-    "customer_id": 203,
+    "session_id": "SESS_6415",
+    "customer_id": 587,
+    "event": "CHECKOUT",
+    "device": "Tablet"
+  },
+  {
+    "session_id": "SESS_2655",
+    "customer_id": 588,
     "event": "SEARCH",
     "device": "Tablet"
   }

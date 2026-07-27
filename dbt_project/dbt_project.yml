@@ -1,0 +1,16 @@
+name: 'retail_dbt'
+version: '1.0.0'
+profile: 'retail_dbt_profile'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  retail_dbt:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

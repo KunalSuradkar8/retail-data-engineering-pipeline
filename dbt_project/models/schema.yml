@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned and standardized staging model for retail store orders"
+    columns:
+      - name: order_id
+        description: "Primary key of the order"
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_sales
+    description: "Fact table for daily retail sales analysis"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null
