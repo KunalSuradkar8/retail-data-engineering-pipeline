@@ -1,62 +1,62 @@
 [
   {
-    "session_id": "SESS_9726",
-    "customer_id": 584,
-    "event": "SEARCH",
-    "device": "Mobile"
-  },
-  {
-    "session_id": "SESS_6444",
-    "customer_id": 585,
+    "session_id": "SESS_8747",
+    "customer_id": 356,
     "event": "ADD_TO_CART",
     "device": "Tablet"
   },
   {
-    "session_id": "SESS_5552",
-    "customer_id": 586,
-    "event": "ADD_TO_CART",
+    "session_id": "SESS_1642",
+    "customer_id": 357,
+    "event": "SEARCH",
     "device": "Desktop"
   },
   {
-    "session_id": "SESS_1788",
-    "customer_id": 587,
+    "session_id": "SESS_4248",
+    "customer_id": 358,
+    "event": "SEARCH",
+    "device": "Tablet"
+  },
+  {
+    "session_id": "SESS_8498",
+    "customer_id": 359,
+    "event": "ADD_TO_CART",
+    "device": "Tablet"
+  },
+  {
+    "session_id": "SESS_4066",
+    "customer_id": 360,
     "event": "VIEW_ITEM",
     "device": "Mobile"
   },
   {
-    "session_id": "SESS_6821",
-    "customer_id": 588,
+    "session_id": "SESS_8025",
+    "customer_id": 356,
     "event": "SEARCH",
     "device": "Desktop"
   },
   {
-    "session_id": "SESS_7116",
-    "customer_id": 584,
-    "event": "SEARCH",
-    "device": "Desktop"
-  },
-  {
-    "session_id": "SESS_5837",
-    "customer_id": 585,
-    "event": "ADD_TO_CART",
-    "device": "Mobile"
-  },
-  {
-    "session_id": "SESS_1474",
-    "customer_id": 586,
-    "event": "CHECKOUT",
-    "device": "Desktop"
-  },
-  {
-    "session_id": "SESS_6415",
-    "customer_id": 587,
+    "session_id": "SESS_7422",
+    "customer_id": 357,
     "event": "CHECKOUT",
     "device": "Tablet"
   },
   {
-    "session_id": "SESS_2655",
-    "customer_id": 588,
-    "event": "SEARCH",
+    "session_id": "SESS_4114",
+    "customer_id": 358,
+    "event": "ADD_TO_CART",
+    "device": "Mobile"
+  },
+  {
+    "session_id": "SESS_6243",
+    "customer_id": 359,
+    "event": "ADD_TO_CART",
+    "device": "Mobile"
+  },
+  {
+    "session_id": "SESS_2818",
+    "customer_id": 360,
+    "event": "CHECKOUT",
     "device": "Tablet"
   }
 ]

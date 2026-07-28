@@ -5,4 +5,12 @@ sources:
     schema: retail
     tables:
       - name: orders
-      - name: dim_customer
+      - name: customers
+      - name: addresses
+      - name: categories
+      - name: suppliers
+      - name: products
+      - name: stores
+      - name: order_items
+      - name: payments
+      - name: shipments
